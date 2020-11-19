@@ -1,7 +1,9 @@
-# microservices-light-reading
+# Light Reading For Microservices 
+
 ---
-my journey to learning microservices
 
-Hope you enjoy the same !
+My journey to understanding micro-services...
 
-With (☞ﾟヮﾟ)☞ from India !
+Hope you will enjoy the same!
+
+With Σ>―(〃°ω°〃)♡→ from India !
