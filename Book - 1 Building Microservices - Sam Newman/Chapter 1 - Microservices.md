@@ -1,4 +1,29 @@
+# Table of Contents
 
+----
+
+- [What are microservices ?](#what-are-microservices--)
+  * [Small, and Focused on Doing One Thing Well](#small--and-focused-on-doing-one-thing-well)
+  * [Autonomous](#autonomous)
+- [Microservices vs SOA](#microservices-vs-soa)
+  * [Service-Oriented Architecture](#service-oriented-architecture)
+  * [Microservices](#microservices)
+  * [Major Differences](#major-differences)
+- [Key Benefits](#key-benefits)
+  * [Technology Heterogeneity](#technology-heterogeneity)
+  * [Resilience](#resilience)
+  * [Scaling](#scaling)
+  * [Ease of Deployment](#ease-of-deployment)
+  * [Organizational Alignment](#organizational-alignment)
+  * [Composability](#composability)
+  * [Optimizing for Replaceability](#optimizing-for-replaceability)
+- [What About Service-Oriented Architecture ?](#what-about-service-oriented-architecture--)
+  * [Other Decompositional Techniques](#other-decompositional-techniques)
+    + [Shared Libraries](#shared-libraries)
+  * [Modules](#modules)
+    + [Erlang Approach](#erlang-approach)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # What are microservices ?
 
