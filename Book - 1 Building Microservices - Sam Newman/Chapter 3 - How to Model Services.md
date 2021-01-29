@@ -44,16 +44,43 @@ A specific responsibility enforced by explicit boundaries. If you want informati
 
 ## Shared and Hidden Models
 
+![shared model](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book%20-%201%20Building%20Microservices%20-%20Sam%20Newman/assets/sharedmodel.svg)
 
+On a side mote, we may encounter models with the same nature that have very different meanings in different contexts too. 
+
+For example, we might have the concept of a return, which represents a customer sending something back. Within the context of the customer, a return is all about printing a shipping label, dispatching a package, and waiting for a refund.
+For the warehouse, this could represent a package that is about to arrive, and a stock item that needs to be restocked. 
+
+It follows that within the warehouse we store additional information associated with the return that relates to the tasks to be carried out; for example, we may generate a restock request. The shared model of the return becomes associated with different processes and supporting entities within each bounded context, but that is very much an internal concern within the context itself.
 
 ## Modules and Services
 
+By thinking clearly about what models should be shared, and not sharing our internal representations, we avoid one of the potential pitfalls that can result in tight coupling.
+We also have identified a boundary within our domain where all like-minded business capabilities should live, giving us the high cohesion we want.
+These bounded contexts, then, lend themselves extremely well to being compositional boundaries.
+
+When you're starting out on a new codebase, this probably a good place to begin. So once you have found your bounded contexts in your domain, make sure they are modeled within your codebase as modules, with shared and hidden models. These modular boundaries then become excellent candidates for microservices.
+
+> When starting out, however keep a new system on the more monolithic side; getting service boundaries wrong can be costly, so waiting for things to stabilize as you get to grips with a new domain is sensible.
+
 ## Premature Decomposition
+
+Prematurely decomposing a system into microservices can be costly, especially if you are new to the domain.
 
 # Business Capabilities
 
+When you start to think about the bounded contexts that exists in your organization, you should be thinking not in terms of dat that is shared, but about the capabilities those contexts provide the rest of the domain.
+
+So ask first, "What does this context do ?", and then "So what data does it need to do that ?"
+
+When modeled as services, these capabilities become the key operations that will be exposed over the wire to other collaborators.
+
 # Turtles All the Way Down
 
+
+
 # Communication in terms of Business Concepts
+
+
 
 # The Technical Boundary

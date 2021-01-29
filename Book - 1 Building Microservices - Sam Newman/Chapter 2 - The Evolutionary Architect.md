@@ -169,7 +169,7 @@ Examples include,
 
 **The code for a twelve-factor app makes no distinction between local and third-party services. To the app, both are attached resources, accessed via URL or local/credentials stored in the config.**                                                 A deploy of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third-party without any changes to the app’s code. Only the resource handle in the config needs to change.
 
-![](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book - 1 Building Microservices - Sam Newman/assets/Picture3.svg)
+![](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book%20-%201%20Building%20Microservices%20-%20Sam%20Newman/assets/Picture3.svg)
 
 ##### Build, Release, Run
 
@@ -184,7 +184,7 @@ A codebase is transformed into a (non-development) deploy through three stages:
 - The *release stage* takes the build produced by the build stage and combines it with the deploy’s current *config*. The resulting *release* contains both the build and the config and is ready for immediate execution in the execution environment.
 - The *run* stage runs the app in the execution environment, by launching some set of the app’s *processes* against a selected release.
 
-![](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book - 1 Building Microservices - Sam Newman/assets/Picture4.svg)
+![](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book%20-%201%20Building%20Microservices%20-%20Sam%20Newman/assets/Picture4.svg)
 
 Deployment tools typically offer release management tools, most notably the ability to roll back to a previous release.
 
@@ -226,7 +226,7 @@ In deployment, a routing layer handles routing requests from a public-facing hos
 
 **In the 12-factor app, processes are a first-class citizen.** Processes in the 12-factor app take strong cues from *UNIX process model for running server daemons.* 
 
-![scale vs workload diversity](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book - 1 Building Microservices - Sam Newman/assets/Picture5.svg)
+![scale vs workload diversity](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book%20-%201%20Building%20Microservices%20-%20Sam%20Newman/assets/Picture5.svg)
 
 Using this model, the developer can architect their app to handle diverse workloads by assigning each type of work to a *process type*.
 
@@ -342,7 +342,7 @@ For a small enough group, perhaps a small team, combining principles and practic
 
 ## A Real-World Example 
 
-![](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book - 1 Building Microservices - Sam Newman/assets/Picture7.svg)
+![](https://raw.githubusercontent.com/aditya109/microservices-light-reading/master/Book%20-%201%20Building%20Microservices%20-%20Sam%20Newman/assets/Picture7.svg)
 
 # The Required Standard
 
