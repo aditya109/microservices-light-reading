@@ -77,10 +77,11 @@ When modeled as services, these capabilities become the key operations that will
 
 # Turtles All the Way Down
 
+At the start, you will probably identify a number of of coarse-grained bounded contexts. But these bounded contexts can in turn contain further bounded contexts.
 
+When considering the boundaries of your microservices, first think in terms of the larger, coarse-grained contexts, and then subdivide along these nested contexts when you're looking for the benefits of splitting out these seams.
 
 # Communication in terms of Business Concepts
 
+If our systems are decomposed along the bounded contexts that represent our domain, the changes we want are more likely to be isolated to one, single microservice boundary. This reduces the number of places we need to make a change, and allows us to deploy that change quickly.
 
-
-# The Technical Boundary
